@@ -12,30 +12,35 @@ public class Dog {
     }
 
     public void bark() {
-        System.out.println(String.format(" %s says Woof! (Energy left: %s)", name, energy -= 10));
-        //        Every bark costs **10 energy** (energy decreases).
+        if(energy <= 10){
+            System.out.printf(" %s is too tired. Needs to rest.%n", name);
+        }else {
+            System.out.printf(" %s says Woof! (Energy left: %s)%n", name, energy -= 10);
+            //        Every bark costs **10 energy** (energy decreases).
+        }
+
     }
 
     public void eat() {
         if (energy > 80) {
-            System.out.println(String.format(" %s is not hungry)", name));
+            System.out.printf(" %s is not hungry%n", name);
         } else {
-            System.out.println(String.format(" %s is eating! (Energy restored: %s)", name, energy += 20));
+            System.out.printf(" %s is eating! (Energy restored: %s)%n", name, energy += 20);
             //        2. `eat()` → increases energy by **20** (max 100).
         }
     }
 
     public void play() {
-        if (energy <= 0) {
-            System.out.println(String.format(" %s is too tired. Needs to rest.", name));
+        if (energy <= 30) {
+            System.out.printf(" %s is too tired. Needs to rest.%n", name);
         } else {
-            System.out.println(String.format(" %s is playing fetch! (Energy left: %s)", name, energy -= 30));
+            System.out.printf(" %s is playing fetch! (Energy left: %s)%n", name, energy -= 30);
             //        <name> is playing fetch! (Energy left: <energy>)
         }
     }
 
     public void sleep(){
-        System.out.println(String.format(" %s is sleeping! (Energy restored: %s)" , name , energy = 100 ));
+        System.out.printf(" %s is sleeping! (Energy restored: %s)%n", name , energy = 100 );
     }
 
 //    private void checkEnergy(){

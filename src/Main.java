@@ -11,6 +11,21 @@ public class Main {
         Dog d2 = new Dog();
         d2.name = "fred";
         d2.age = 10;
+
+        d1.bark();
+        d1.play();
+        d1.eat();
+        d1.eat();
+        d1.eat();
+
+
+        d2.play();
+        d2.play();
+        d2.play();
+        d2.play();
+        d2.bark();
+        d2.sleep();
+        d2.bark();
     }
 }
 
