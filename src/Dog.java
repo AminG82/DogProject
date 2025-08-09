@@ -43,9 +43,4 @@ public class Dog {
         System.out.printf(" %s is sleeping! (Energy restored: %s)%n", name , energy = 100 );
     }
 
-//    private void checkEnergy(){
-//        if (energy <= 0 ){
-//            System.out.println(String.format(" %s is too tired. Needs to rest.", name));
-//        }
-//    }
 }
