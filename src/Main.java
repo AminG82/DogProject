@@ -1,14 +1,16 @@
-import java.awt.*;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    public static void meetDog(Dog dog) {
+        dog.bark();
+    }
 
     public static void main(String[] args) {
 
-        Dog d1 = new Dog("jessie" , 6);
-        Dog d2 = new Dog("fred" , 10);
-        Puppy p1 = new Puppy("tole sag" , 1 , false);
+        Dog d1 = new Dog("jessie", 6);
+        Dog d2 = new Dog("fred", 10);
+        Puppy p1 = new Puppy("tole sag", 1, false);
+        GuardDog g1 = new GuardDog("sage vahshi", 1, false);
         d1.bark();
         d1.play();
         d1.eat();
@@ -29,6 +31,12 @@ public class Main {
         p1.play();
         p1.bark();
         p1.train();
+
+        Dog[] dogs = {d1, d2, p1, g1};
+
+        for (Dog d : dogs) {
+            meetDog(d);
+        }
     }
 }
 
