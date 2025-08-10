@@ -1,3 +1,5 @@
+import java.awt.*;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -11,6 +13,7 @@ public class Main {
         d1.eat();
         d1.eat();
         d1.eat();
+        System.out.println(Dog.dogInfo(d1));
 
 
         d2.play();
@@ -20,6 +23,7 @@ public class Main {
         d2.bark();
         d2.sleep();
         d2.bark();
+        System.out.println(Dog.dogInfo(d2));
     }
 }
 
