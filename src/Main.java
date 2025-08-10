@@ -28,7 +28,7 @@ public class Main {
 
         p1.play();
         p1.bark();
-
+        p1.train();
     }
 }
 

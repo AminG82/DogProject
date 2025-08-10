@@ -13,4 +13,16 @@ public class Puppy extends Dog{
     public void bark(){
         System.out.println(getName() + " says Yip!");
     }
+    public boolean getIsTrained(){
+        return isTrained;
+    }
+    public void setIsTrained(boolean isTrained){
+        this.isTrained = isTrained;
+    }
+
+    public void train(){
+        if(!getIsTrained()){
+            setIsTrained(true);
+        }
+    }
 }
