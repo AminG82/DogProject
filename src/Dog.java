@@ -35,7 +35,7 @@ public class Dog {
     }
 
     public void setEnergy(Integer energy) {
-        if (energy > 0 && energy <= 100) {
+        if (energy >= 0 && energy <= 100) {
             this.energy = energy;
         }
     }
@@ -79,6 +79,6 @@ public class Dog {
     }
 
     public static String dogInfo(Dog dog){
-        return String.format("this dog name is : %s %n He/She is : %d years old! %n Energy level is : %d" ,dog.getName() ,dog.getAge() , dog.getAge());
+        return String.format("this dog name is : %s %n He/She is : %d years old! %n Energy level is : %d" ,dog.getName() ,dog.getAge() , dog.getEnergy());
     }
 }

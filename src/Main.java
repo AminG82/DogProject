@@ -8,6 +8,7 @@ public class Main {
 
         Dog d1 = new Dog("jessie" , 6);
         Dog d2 = new Dog("fred" , 10);
+        Puppy p1 = new Puppy("tole sag" , 1 , false);
         d1.bark();
         d1.play();
         d1.eat();
@@ -24,6 +25,10 @@ public class Main {
         d2.sleep();
         d2.bark();
         System.out.println(Dog.dogInfo(d2));
+
+        p1.play();
+        p1.bark();
+
     }
 }
 
