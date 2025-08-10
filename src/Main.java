@@ -4,14 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Dog d1 = new Dog();
-        d1.name = "jessi";
-        d1.age = 6;
-
-        Dog d2 = new Dog();
-        d2.name = "fred";
-        d2.age = 10;
-
+        Dog d1 = new Dog("jessie" , 6);
+        Dog d2 = new Dog("fred" , 10);
         d1.bark();
         d1.play();
         d1.eat();
